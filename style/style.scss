@@ -1,0 +1,18 @@
+@import 'compass/css3';
+
+body {
+  .compass_test {
+    @include box-shadow(2px 2px 15px black);
+    @include border-radius(30px);
+    @include background-image(linear-gradient(top left, #7af 15px, #59e 40px));
+    margin: 40px;
+    padding: 20px;
+    p {
+      @include text-shadow(1px 1px 3px black);
+      color: white;
+      font-family: monospace;
+      font-size: 24px;
+      text-align: center;
+    }
+  }
+}
