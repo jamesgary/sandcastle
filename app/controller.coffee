@@ -1,4 +1,4 @@
-define ['jquery'], ($) ->
+define ['jquery', 'lib/anything'], ($, anything) ->
   setup: ->
     $('document').ready ->
-      console.log('Success!')
+      anything.saySomething()

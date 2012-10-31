@@ -11,6 +11,14 @@ guard 'coffeescript', {
   watch(%r{^app/(.+\.coffee)$})
 end
 
+guard 'coffeescript', {
+  :all_on_start => true,
+  :output => "spec/testem/compiled",
+  :hide_success => @quiet,
+} do
+  watch(%r{^spec/(.+\.coffee)$})
+end
+
 guard 'haml', {
   :run_at_start => true,
   :input => 'markup',
